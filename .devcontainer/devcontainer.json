@@ -1,0 +1,14 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers/features/powershell:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"microsoft-IsvExpTools.powerplatform-vscode" 
+			]
+		}
+	},
+	"postCreateCommand": "bash .devcontainer/dotnet-install.sh --channel 6.0.1xx"
+}
